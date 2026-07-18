@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0a0a0a">
+  <title>PH2 LAB — Website demo v2</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="intro" class="intro">
+    <button id="skipIntro" class="skip-intro" type="button">SALTA</button>
+
+    <div class="intro-sequence" aria-label="Animazione logo PH2">
+      <svg class="logo-piece piece-p" viewBox="20 340 555 165" aria-hidden="true">
+        <path d="M77.417969 388.960938v32.898437h62.363281c4.652344-.09375 7.996094-1.441406 10.03125-4.042969 2.03125-2.601562 3.027344-5.894531 2.980469-9.871094v-5.0625c.070312-4.457031-1.15625-7.882812-3.683594-10.285156-2.527344-2.394531-6.78125-3.609375-12.765625-3.636719zm-40.128907 98.332031V356.425781h109.359376c12.589843.078125 22.335937 2.050781 29.226562 5.917969 6.894531 3.867188 11.667969 9.160156 14.328125 15.878906 2.65625 6.722656 3.921875 14.398438 3.800781 23.03125v11.207032c.070313 6.664062-1.011718 13.183593-3.25 19.550781-2.242187 6.367187-6.058593 11.652343-11.449218 15.851562-5.394532 4.199219-12.785157 6.378907-22.175782 6.53125H77.417969v32.898438z"/>
+      </svg>
+      <svg class="logo-piece piece-h" viewBox="20 340 555 165" aria-hidden="true">
+        <path d="M213.289062 487.292969V356.425781h40.128907v48.160157h70.847656v34.707031h-70.847656v48z"/>
+      </svg>
+      <svg class="logo-piece piece-2" viewBox="20 340 555 165" aria-hidden="true">
+        <path d="M404.429688 487.03125v-44.46875c-.101563-8.113281 2.722656-14.660156 8.472656-19.632812 5.746094-4.976563 15.035156-7.949219 27.855468-8.925782l45.914063-2.890625c9.605469-.519531 16.644531-1.152343 21.121094-1.890625 4.476562-.738281 7.328125-2.089844 8.550781-4.058594 1.222656-1.960937 1.757812-5.042968 1.597656-9.234374.148438-3.519532-.261718-6.226563-1.226562-8.113282-.972656-1.894531-3.363282-3.195312-7.183594-3.898437-3.816406-.707031-9.929688-1.039063-18.339844-1.003907h-26.570312c-8.359375-.175781-14.191406.808594-17.488282 2.957032-3.300781 2.152344-4.882812 6.527344-4.746093 13.128906v5.601562h-37.957031v-15.363281c-.121094-12.746093 3.914062-21.730469 12.105468-26.953125 8.195313-5.222656 21.273438-7.746094 39.230469-7.570312h52.777344c12.421875-.03125 22.085937 1.277344 28.988281 3.917968 6.90625 2.640626 11.722656 6.796876 14.445312 12.46875 2.730469 5.675782 4.035157 13.046876 3.925782 22.117188.203125 12.660156-.988282 22.285156-3.5625 28.871094-2.574219 6.589844-7.753906 11.179687-15.53125 13.769531-7.777344 2.59375-19.367188 4.226563-34.773438 4.898437l-41.390625 2.167969c-5.53125.261719-9.695312.902344-12.488281 1.914063-2.792969 1.011718-4.648438 2.628906-5.578125 4.84375-.921875 2.222656-1.347656 5.269531-1.273437 9.148437h116.40625v28.199219z"/>
+      </svg>
+      <div class="square-flight square-orange"></div>
+      <div class="square-flight square-light"></div>
+      <div class="square-flight square-mid"></div>
+
+      <svg class="ph2-logo intro-logo" viewBox="20 340 555 165" role="img" aria-label="PH2">
+        <g>
+          <path class="logo-white" d="M77.417969 388.960938v32.898437h62.363281c4.652344-.09375 7.996094-1.441406 10.03125-4.042969 2.03125-2.601562 3.027344-5.894531 2.980469-9.871094v-5.0625c.070312-4.457031-1.15625-7.882812-3.683594-10.285156-2.527344-2.394531-6.78125-3.609375-12.765625-3.636719zm-40.128907 98.332031V356.425781h109.359376c12.589843.078125 22.335937 2.050781 29.226562 5.917969 6.894531 3.867188 11.667969 9.160156 14.328125 15.878906 2.65625 6.722656 3.921875 14.398438 3.800781 23.03125v11.207032c.070313 6.664062-1.011718 13.183593-3.25 19.550781-2.242187 6.367187-6.058593 11.652343-11.449218 15.851562-5.394532 4.199219-12.785157 6.378907-22.175782 6.53125H77.417969v32.898438z"/>
+          <path class="logo-white" d="M213.289062 487.292969V356.425781h40.128907v48.160157h70.847656v34.707031h-70.847656v48z"/>
+          <path class="logo-white" d="M404.429688 487.03125v-44.46875c-.101563-8.113281 2.722656-14.660156 8.472656-19.632812 5.746094-4.976563 15.035156-7.949219 27.855468-8.925782l45.914063-2.890625c9.605469-.519531 16.644531-1.152343 21.121094-1.890625 4.476562-.738281 7.328125-2.089844 8.550781-4.058594 1.222656-1.960937 1.757812-5.042968 1.597656-9.234374.148438-3.519532-.261718-6.226563-1.226562-8.113282-.972656-1.894531-3.363282-3.195312-7.183594-3.898437-3.816406-.707031-9.929688-1.039063-18.339844-1.003907h-26.570312c-8.359375-.175781-14.191406.808594-17.488282 2.957032-3.300781 2.152344-4.882812 6.527344-4.746093 13.128906v5.601562h-37.957031v-15.363281c-.121094-12.746093 3.914062-21.730469 12.105468-26.953125 8.195313-5.222656 21.273438-7.746094 39.230469-7.570312h52.777344c12.421875-.03125 22.085937 1.277344 28.988281 3.917968 6.90625 2.640626 11.722656 6.796876 14.445312 12.46875 2.730469 5.675782 4.035157 13.046876 3.925782 22.117188.203125 12.660156-.988282 22.285156-3.5625 28.871094-2.574219 6.589844-7.753906 11.179687-15.53125 13.769531-7.777344 2.59375-19.367188 4.226563-34.773438 4.898437l-41.390625 2.167969c-5.53125.261719-9.695312.902344-12.488281 1.914063-2.792969 1.011718-4.648438 2.628906-5.578125 4.84375-.921875 2.222656-1.347656 5.269531-1.273437 9.148437h116.40625v28.199219z"/>
+          <rect class="orange" x="338.171875" y="356.160156" width="39.703125" height="34.410156"/>
+          <rect class="light" x="338.171875" y="404.488281" width="39.703125" height="34.410157"/>
+          <rect class="mid" x="338.171875" y="452.816406" width="39.703125" height="34.40625"/>
+        </g>
+      </svg>
+      <div class="intro-caption">CREATIVE GRAPHIC SOLUTIONS</div>
+    </div>
+  </div>
+
+  <div id="page" class="page">
+    <header class="site-header">
+      <a class="brand-link" href="#top" aria-label="Torna all'inizio">
+        <svg class="ph2-logo header-logo" viewBox="20 340 555 165" aria-hidden="true">
+          <g>
+            <path class="logo-dark" d="M77.417969 388.960938v32.898437h62.363281c4.652344-.09375 7.996094-1.441406 10.03125-4.042969 2.03125-2.601562 3.027344-5.894531 2.980469-9.871094v-5.0625c.070312-4.457031-1.15625-7.882812-3.683594-10.285156-2.527344-2.394531-6.78125-3.609375-12.765625-3.636719zm-40.128907 98.332031V356.425781h109.359376c12.589843.078125 22.335937 2.050781 29.226562 5.917969 6.894531 3.867188 11.667969 9.160156 14.328125 15.878906 2.65625 6.722656 3.921875 14.398438 3.800781 23.03125v11.207032c.070313 6.664062-1.011718 13.183593-3.25 19.550781-2.242187 6.367187-6.058593 11.652343-11.449218 15.851562-5.394532 4.199219-12.785157 6.378907-22.175782 6.53125H77.417969v32.898438z"/>
+            <path class="logo-dark" d="M213.289062 487.292969V356.425781h40.128907v48.160157h70.847656v34.707031h-70.847656v48z"/>
+            <path class="logo-dark" d="M404.429688 487.03125v-44.46875c-.101563-8.113281 2.722656-14.660156 8.472656-19.632812 5.746094-4.976563 15.035156-7.949219 27.855468-8.925782l45.914063-2.890625c9.605469-.519531 16.644531-1.152343 21.121094-1.890625 4.476562-.738281 7.328125-2.089844 8.550781-4.058594 1.222656-1.960937 1.757812-5.042968 1.597656-9.234374.148438-3.519532-.261718-6.226563-1.226562-8.113282-.972656-1.894531-3.363282-3.195312-7.183594-3.898437-3.816406-.707031-9.929688-1.039063-18.339844-1.003907h-26.570312c-8.359375-.175781-14.191406.808594-17.488282 2.957032-3.300781 2.152344-4.882812 6.527344-4.746093 13.128906v5.601562h-37.957031v-15.363281c-.121094-12.746093 3.914062-21.730469 12.105468-26.953125 8.195313-5.222656 21.273438-7.746094 39.230469-7.570312h52.777344c12.421875-.03125 22.085937 1.277344 28.988281 3.917968 6.90625 2.640626 11.722656 6.796876 14.445312 12.46875 2.730469 5.675782 4.035157 13.046876 3.925782 22.117188.203125 12.660156-.988282 22.285156-3.5625 28.871094-2.574219 6.589844-7.753906 11.179687-15.53125 13.769531-7.777344 2.59375-19.367188 4.226563-34.773438 4.898437l-41.390625 2.167969c-5.53125.261719-9.695312.902344-12.488281 1.914063-2.792969 1.011718-4.648438 2.628906-5.578125 4.84375-.921875 2.222656-1.347656 5.269531-1.273437 9.148437h116.40625v28.199219z"/>
+            <rect class="orange" x="338.171875" y="356.160156" width="39.703125" height="34.410156"/>
+            <rect class="light" x="338.171875" y="404.488281" width="39.703125" height="34.410157"/>
+            <rect class="mid" x="338.171875" y="452.816406" width="39.703125" height="34.40625"/>
+          </g>
+        </svg>
+      </a>
+
+      <button id="menuButton" class="menu-button" type="button" aria-expanded="false" aria-controls="menuOverlay">
+        <span>MENU</span>
+        <i></i><i></i>
+      </button>
+    </header>
+
+    <div id="menuOverlay" class="menu-overlay" aria-hidden="true">
+      <nav class="overlay-nav">
+        <a href="#work"><span>01</span>WORK</a>
+        <a href="#about"><span>02</span>ABOUT</a>
+        <a href="#contact"><span>03</span>CONTACT</a>
+      </nav>
+      <div class="menu-meta">
+        <p>PH2 LAB — BOLOGNA</p>
+        <p>BRANDING / PACKAGING / PRODUCT DESIGN / SPORTS / EDITORIAL / RETAIL</p>
+      </div>
+    </div>
+
+    <main id="top">
+      <section class="hero">
+        <p class="eyebrow">MICHELE FUSTINI — SENIOR GRAPHIC DESIGNER & ART DIRECTOR</p>
+        <h1>Ideas become<br>visual systems.</h1>
+        <p class="hero-copy">Branding, packaging, product design, sports graphics, editorial, retail e comunicazione visiva.</p>
+        <a class="scroll-link" href="#work">SCOPRI I PROGETTI ↓</a>
+      </section>
+
+      <section id="work" class="work-section">
+        <div class="section-head">
+          <span>SELECTED WORK</span>
+          <span>MULTIDISCIPLINARY PORTFOLIO</span>
+        </div>
+        <div class="work-grid">
+          <a class="project project-wide" href="#hitrun">
+            <img src="assets/hitrun-cover.jpg" alt="Hit & Run, progetto di branding e packaging">
+            <div><span>BRANDING / PACKAGING / RETAIL</span><h2>Hit &amp; Run</h2></div>
+          </a>
+          <a class="project" href="#about">
+            <img src="assets/branding.jpg" alt="Branding e comunicazione visiva">
+            <div><span>BRANDING &amp; COMMUNICATION</span><h2>Identity systems</h2></div>
+          </a>
+          <a class="project" href="#about">
+            <img src="assets/product.jpg" alt="Product design">
+            <div><span>PRODUCT DESIGN</span><h2>Concept to visualization</h2></div>
+          </a>
+        </div>
+      </section>
+
+
+      <section id="hitrun" class="case-study">
+        <div class="case-intro">
+          <span>01 — SELECTED PROJECT</span>
+          <div>
+            <h2>Hit &amp; Run</h2>
+            <p>Brand identity, packaging design, cataloghi, espositori e materiali di comunicazione per una linea completa di pet food.</p>
+          </div>
+        </div>
+        <div class="case-gallery">
+          <figure><img src="assets/hitrun-biscotti-yellow.png" alt="Packaging Hit & Run manzo e pomodoro"></figure>
+          <figure><img src="assets/hitrun-biscotti-purple.png" alt="Packaging Hit & Run mele e carote"></figure>
+          <figure class="wide"><img src="assets/hitrun-polpets.png" alt="Linea PolPets Hit & Run"></figure>
+          <figure class="wide"><img src="assets/hitrun-brochure.png" alt="Brochure Hit & Run"></figure>
+          <figure><img src="assets/hitrun-dental.png" alt="Dental Stick Hit & Run"></figure>
+          <figure><img src="assets/hitrun-cans.png" alt="Lattine Hit & Run"></figure>
+          <figure><img src="assets/hitrun-display.png" alt="Espositore Hit & Run"></figure>
+          <figure><img src="assets/hitrun-magazine.jpg" alt="Pagina pubblicitaria Hit & Run"></figure>
+        </div>
+      </section>
+
+      <section id="about" class="text-section">
+        <span>ABOUT</span>
+        <p>PH2 LAB è lo studio di Michele Fustini. Progetti di branding, packaging, product design e comunicazione sviluppati dal concept alla produzione, con esperienza tecnica, direzione creativa e controllo del prodotto finito.</p>
+      </section>
+
+      <footer id="contact" class="footer">
+        <div class="footer-top">
+          <span>LET'S WORK TOGETHER</span>
+          <span>BOLOGNA / REMOTE</span>
+        </div>
+        <a class="footer-mail" href="mailto:info@ph2lab.com">INFO@PH2LAB.COM</a>
+        <div class="footer-links">
+          <a href="tel:+393937570710">+39 393 757 0710</a>
+          <a href="https://www.behance.net/michelefustini" target="_blank" rel="noopener">BEHANCE</a>
+          <a href="https://www.linkedin.com/in/ph2lab/" target="_blank" rel="noopener">LINKEDIN</a>
+          <a href="https://www.instagram.com/ph2lab/" target="_blank" rel="noopener">INSTAGRAM</a>
+          <a href="https://www.facebook.com/Ph2lab/" target="_blank" rel="noopener">FACEBOOK</a>
+        </div>
+      </footer>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
